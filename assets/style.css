@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700 |Exo:100,200,300,400,500,600,700 |Lato:100,200,300,400,500,600 | Source Sans Pro:100,200,300,400,500,600');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+ body {
+     background: url("images/close-up-photo-of-green-leafed-plant-1407305.jpg");
+     background-position: center;
+     background-repeat: repeat-y;
+     background-color: rgba(0,0,0,0.5);
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+ }
+
+/*--------------------------------------------Fonts and Colours*/
+
+.heading {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 72px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+/*--------------------------------------------Menu Items*/
+
+.nav {
+    width: 100%;
+    height: 75px;
+}
+
+.nav-item {
+border-bottom: 2px solid white;
+text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*--------------------------------------------Header Image*/
+
+.header-block {
+    width: 100%;
+}
+
+.white-half-box {
+    margin-top: 75px !important;
+    background-color: white;
+    min-height: 600px;
+}
+
+.header-item-image {
+    padding-left: 0 !important;
+    margin-top: 75px !important;
+}
+
+.profile-image {
+    background: url("images/profile-image-sophia-rumpus.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+}
+
