@@ -6,16 +6,33 @@
     border: 0;
 }
  
+/*--------------------------------------------Layout*/
+
  body {
      background: url("images/close-up-photo-of-green-leafed-plant-1407305.jpg");
      background-position: center;
      background-repeat: repeat-y;
      background-attachment: fixed;
-     background-color: rgba(0, 0, 0, 0.95);
      background-size: cover;
      width: 100%;
      height: 100%;
- }
+}
+
+.image-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-600 {
+    height: 600px;
+}
+
+.section-500 {
+    height: 500px;
+}
+
+.resume-list {
+    list-style-type: none;
+}
 
 /*--------------------------------------------Fonts and Colours*/
 
@@ -48,30 +65,25 @@
     color: white;
 }
 
+.white-box {
+    background-color: white;
+}
+
 .ct {
     text-align: center;
 }
 
-.black {
-    color: black;
-}
-
-/*--------------------------------------------Menu Items*/
+/*--------------------------------------------Menu*/
 
 .nav-item {
 border-bottom: 2px solid white;
 }
 
-/*--------------------------------------------Header Image*/
-
-.header-block {
-    width: 100%;
+.hvr-grow-shadow {
+    color: white !important;
 }
 
-.white-half-box {
-    background-color: white;
-    height: 600px;
-}
+/*--------------------------------------------Header*/
 
 .header-item-image {
     padding-left: 0 !important;
@@ -86,40 +98,24 @@ border-bottom: 2px solid white;
     min-height: 600px;
 }
 
-/*--------------------------------------------Header Description*/
-
-.section-600 {
-    height: 600px;
-}
-.resume-list {
-    list-style-type: none;
-}
-
-.white-third-block {
-    background-color: white;
-}
-
-/*--------------------------------------------Work Experience*/
-
-.full-white-box {
-    background-color: white;
-}
-
 /*--------------------------------------------Projects*/
 
 .website-image {
 height: 350px;
-width: 500px;
+width: 650px;
 }
 
 .marketing-content-image {
-    height: 168px;
-    width: 298px;
+    height: 235px;
+    width: 419px;
     background-size: cover;
 }
 
-/*--------------------------------------------Footer*/
+/*--------------------------------------------Educations*/
 
-footer {
-    background-color: white;
+.body-icon {
+    color: white;
+    font-size: 72px;
 }
+
+/*--------------------------------------------Mobile Optimised*/
