@@ -11,41 +11,51 @@
     <link rel="stylesheet" href="assets/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/47d52a3955.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div class="image-overlay">
 
         <!-- Menu -->
 
-        <ul class="nav nav-fill">
+        <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="/">Profile</a>
+                <a class="arrow nav-link disabled small-text" href="/">
+                    <i class="small material-icons" aria-hidden="true">arrow_left</i>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="#">Work Experience</a>
+                <a class="nav-link active hvr-grow-shadow small-text uppercase" href="/">Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="#">Projects</a>
+                <a class="nav-link hvr-grow-shadow small-text uppercase" href="work-experience.html">Work Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="#">Education</a>
+                <a class="nav-link hvr-grow-shadow small-text uppercase" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="#">About</a>
+                <a class="nav-link hvr-grow-shadow small-text uppercase" href="education.html">Education</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow sub-heading white" href="#">Contact</a>
+                <a class="nav-link hvr-grow-shadow small-text uppercase" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hvr-grow-shadow small-text uppercase" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="arrow nav-link hvr-grow-shadow small-text uppercase" href="work-experience.html">
+                    <i class="small material-icons white" aria-hidden="true">arrow_right</i>
+                </a>
             </li>
         </ul>
 
         <!-- Header -->
 
-        <div class="row mt-5 ml-5 mr-5"> 
+        <div class="row mb-5"> 
             <div class="col-6 white-box section-600">
-                <h1 class="heading uppercase">Sophia Rumpus</h1>
-                <h2 class="sub-heading uppercase">Website Developer</h2>
+                <h1 class="heading uppercase" id="name">Sophia Rumpus</h1>
+                <h2 class="sub-heading uppercase pt-4 pb-4" id="title">Website Developer</h2>
             </div>    
             <div class="col-6 header-item-image">
                 <div class="profile-image"></div>
@@ -54,311 +64,76 @@
 
         <!-- Header - Description -->
 
-        <main class="row mt-5 ml-5 mr-5">
+        <main class="row ml-5 mr-5">
             <div class="col-lg-4 col-md-6 col-12 my-auto">
-                <h3 class="sub-heading white uppercase d-flex justify-content-center pt-4 pb-4">What am I looking for?</h3>
-                <p class="small-text white pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">When it comes to marketing, I like to get my hands dirty. After a background of managing both marketing strategy and content design I prefer to be on the execution side of the work. It is for this reason, and my fascination with the relationship between design and user behaviour that my career path is to specialise in website design.</p>
+                <h3 class="sub-heading white uppercase d-flex justify-content-center pt-4 pb-4">What I do</h3>
+                <div class="col">
+                    <h4 class="small-text white uppercase pt-4 pb-4">Website Design</h4>
+                    <p class="small-text white">Project management for marketing campaigns within the Theatre, Corporate and Education sector at Sony Europe.</p>
+                    <h4 class="small-text white uppercase pt-4 pb-4">Website Development</h4>
+                    <p class="small-text white">Project management for marketing campaigns within the Theatre, Corporate and Education sector at Sony Europe.</p>
+                </div>
             </div>
             <div class="col-lg-4 col-12 my-auto">
-                <h3 class="sub-heading white uppercase d-flex justify-content-center pt-4 pb-4">What are my top skills?</h3>
-                <ul class="small-text white resume-list pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">
-                    <li>Website design</li>
-                    <li>Website development</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>SEO</li>
-                </ul>
+                <div class="white-border mt-4 mb-4">
+                    <h3 class="sub-heading white uppercase d-flex justify-content-center pt-4 pb-4">Top skills</h3>
+                    <ul class="small-text uppercase white ct resume-list">
+                        <li class="pt-2 pb-2">HTML</li>
+                        <li class="pt-2 pb-2">CSS</li>
+                        <li class="pt-2 pb-2">JavaScript</li>
+                        <li class="pt-2 pb-2">SEO</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 my-auto">
                 <h3 class="sub-heading uppercase white d-flex justify-content-center pt-4 pb-4">Why hire me?</h3>
-                <p class="small-text white pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">During my experience with marketing campaigns I analysed SEO tags, keywords, messaging and images on various social media analytics sites and Google Analytics to understand how these factors influence customer action. I used this data to measure against marketing campaign goals to adapt and improve future campaigns. I can therefore offer transferable skills of interpreting reporting data for website development where I offer a broad insight into end-user behaviour.</p>
+                <div class="col">
+                    <h4 class="small-text white uppercase ra pt-4 pb-4">Broad Experience</h4>
+                    <p class="small-text white ra">I am experienced in analysis of SEO tags, keywords, messaging and images on various analytics sites to understand how design influences customer action. I used this data to measure against marketing campaign goals to adapt and improve future campaigns.</p>
+                    <h4 class="small-text white uppercase pt-4 pb-4 ra">Analytical Skills</h4>
+                    <p class="small-text white ra">I offer transferable skills of interpreting data and a broad insight into end-user behaviour.</p>
+                </div>
             </div>
         </main>
 
-        <!-- Work Experience -->
-        
-            <div class="row section-600 white-box mt-5 ml-5 mr-5">
-                <div class="col heading uppercase my-auto">Work Experience</div> 
-            </div>
-
-        <!-- Work Experience - Marketing Assistant -->
-
-        <section>
-            <div class="row mt-5 ml-5 mr-5"> 
-                <div class="col my-auto">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Marketing Assistant <i class="fas fa-caret-down hvr-grow-shadow"></i></h3>
-                        <ul class="resume-list small-text white ct">
-                            <li>Sony Professional Solutions Europe</li>
-                            <li>Basingstoke</li>
-                            <li>Present</li>
-                        </ul>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="sub-heading white uppercase pt-4 pb-4">What did I do?</h3>
-                            <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">Project management for marketing campaigns within the Theatre, Corporate and Education sector at Sony Europe. I attended the Integrated Systems Europe (ISE) Trade Show in Amsterdam where I was the first point of contact on our stand for client meetings and enquiries. Below is a snapshot of our Sony stand at ISE 2020.</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6633112355075092481?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-
-        <!-- Work Experience - Marketing Campaign Manager -->
-
-            <div class="row mt-5 ml-5 mr-5"> 
-                <div class="col my-auto">
-                    <div class="white-border">
-                        <h3 class="sub-heading white uppercase pt-4 pb-4">Marketing Campaign Manager <i class="fas fa-caret-down hvr-grow-shadow"></i></h3>
-                        <ul class="resume-list small-text white ct">
-                            <li>Oxford University Press</li>
-                            <li>Oxford</li>
-                            <li>April 2019 - November 2019</li>
-                        </ul>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="sub-heading white uppercase pt-4 pb-4">What did I do?</h3>
-                                <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">The planning and management of marketing campaigns for Oxford Education brand Project X working with the Editorial, Publishing and Sales Teams to identify quarterly marketing priorities in response to market feedback to drive direct sales and create Marketing Qualified Leads for the Oxford Education Sales Reps.</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="sub-heading white uppercase pt-4 pb-4">Achievements</h3>
-                                <ul class="white small-text pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4">
-                                    <li>Directed a case study film for Project X Hero Academy receiving over 400 YouTube views</li>
-                                    <li>Assisted with testing, monitoring and rolling out new CRM data system functionality to the Oxford Education Marketing Division and captured over 100 new Marketing Qualified Leads</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>     
-
-        <!-- Work Experience - Marketing Campaign Coordinator -->
-
-            <div class="row mt-5 ml-5 mr-5"> 
-                <div class="col my-auto">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Marketing Campaign Coordinator <i class="fas fa-caret-down hvr-grow-shadow"></i></h3>
-                        <ul class="resume-list small-text ct white">
-                            <li>Oxford University Press</li>
-                            <li>Oxford</li>
-                            <li>November 2017 - March 2019</li>
-                        </ul>   
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="sub-heading white uppercase pt-4 pb-4">What did I do?</h3>
-                            <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">Project management for marketing campaigns associated with two Oxford Education brands, Read Write Inc. and Project X involving the creation and deployment of emails from CRM system Spirit V8; the management of third parties, freelancers and external design agencies and their contracts; creating original marketing copy for the Oxford Education website, email and social media channels; and configuring and monitoring of paid advertising on social media and Google.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 class="sub-heading uppercase white pt-4 pb-4">Achievements</h3>
-                            <ul class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4">
-                                <li>Awarded professional and expert status by the Oxford Education Marketing Division</li>
-                                <li>Appointed on to the Reporting Taskforce project working with the Customer Insight Manager to help improve digital marketing channels for Oxford Education Marketing</li>
-                                <li>Chaired the Marketing Administrator and Coordinator group to ensure fluent and consistent communication cross-department</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </section>
-
-        <!-- Projects -->
-
-            <div class="row white-box section-600 mt-5 ml-5 mr-5">
-                <div class="col heading uppercase my-auto">Projects</div> 
-            </div>
-
-        <!-- Projects - Websites-->
-
-        <section>
-            <div class="row mt-5 ml-5 mr-5">
-                <div class="col my-auto">
-                    <div class="white-border">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Websites</h3>
-                        <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">To date, including this very website I have created an original recipe webpage with use of HTML, CSS and JavaScript and a fictional 'Love Running' website as part of Code Institute's Software Development course using HTML and CSS.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row ml-5 mr-5">
-                <div class="col-md-6 col-12">
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">Love Running Website</h4>
-                    <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png" href="https://love-running-sign-up-challenge-2-styling.sophiarumpus.repl.co/index.html" target="_blank" class="website-image mx-auto d-block">
-                    <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">A three part fictional website for sports enthusiasts based in Dublin, Ireland to join a community of runners on park and urban runs. I used HTML and CSS to replicate this website from an example with the Code Institute.</p>
-                </div>
-                <div class="col-md-6 col-12">
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">A Recipe Website</h4>
-                    <img src="assets/images/fino-pitta.jpg" href="https://day-5-challenge-3-2.sophiarumpus.repl.co/" target="_blank" class="website-image mx-auto d-block">
-                    <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">A basic recipe website that showcases HTML, CSS and JavaScript within the icon animation. It is an original recipe inspired by the Nando's fino pita!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects - Marketing Content-->
-
-        <section>
-            <div class="row mt-5 ml-5 mr-5">
-                <div class="col my-auto">
-                    <div class="white-border">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Marketing Content</h3>
-                        <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">During my time as Campaign Manager for Oxford Education I worked with the Editorial, Publishing and Sales Teams to drive direct sales and create Marketing Qualified Leads for the Oxford Education Sales Reps. This involved creating captivating marketing content suitable for a teacher audience; some of which is detailed below.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row ml-5 mr-5">
-                <div class="col-lg-4 col-md-6 col-12 my-auto">
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">A Print Activity Pack</h4>
-                    <img src="assets/images/classroom-activity.jpg" href="http://fdslive.oup.com/www.oup.com/oxed/primary/proj-x/hero-academy/online-lesson-activity-pack.pdf?region=uk" target="_blank" class="marketing-content-image mx-auto d-block">
-                    <p class="small-text white pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">I briefed and planned the creation of this Activity Pack in order to promote Oxford University Press' new reading brand, Project X Hero Academy aimed at primary school teachers to print and use in class.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 my-auto">
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">A Case Study Film</h4>
-                    <iframe width="90%" height="235" src="https://www.youtube.com/embed/33muO1wGv8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto d-block"></iframe>
-                    <p class="small-text white pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">I directed this case study film which included planning the brief, the structure, questions and the edits of the footage, working with Oxford Digital Media who filmed and executed the edits. This film has received over 400 YouTube views.</p>
-                </div>
-                <div class="col-lg-4 col-12 my-auto">
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">Email Design</h4>
-                    <img src="assets/images/email-design-image.jpg" href="" target="_blank" class="marketing-content-image mx-auto d-block">
-                    <p class="small-text white pl-3 pr-3 pt-4 pb-4 ml-2 mr-2 mt-4 ct">Part of my marketing strategy was e-marketing to Educational Leaders. I planned, designed and wrote the copy for the emails within my marketing campaigns working with the editorial team for accuracy on product information.</p>
-            </div>
-        </section>
-
-        <!-- Education -->
-
-        <div class="row white-box section-600 mt-5 ml-5 mr-5">
-            <div class="col heading uppercase my-auto">Education</div> 
-        </div>
-        <section class="mt-5 ml-5 mr-5">
-            <div class="row section-600">
-                <div class="col-md-6 my-auto">
-                    <i class="fas fa-graduation-cap body-icon d-flex justify-content-center"></i>
-                    <h4 class="sub-heading uppercase white pt-4 pb-4">Full Stack Software Development</h4>
-                    <ul class="resume-list small-text white ct">
-                        <li>Level 5 Diploma</li>
-                        <li>The Code Institute</li>
-                        <li>TBA November 2020</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 my-auto">
-                    <i class="fas fa-graduation-cap body-icon d-flex justify-content-center"></i>
-                    <h4 class="sub-heading white uppercase pt-4 pb-4">Classical Literature and Civilisation with Philosophy</h4>
-                    <ul class="resume-list small-text white ct">
-                        <li>Bachelor of Arts Honours Degree</li>
-                        <li>University of Birmingham</li>
-                        <li>2:1 December 2017</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-
-        <div class="row white-box section-600 mt-5 ml-5 mr-5">
-            <div class="col heading uppercase my-auto">About</div> 
-        </div>
-
-        <!-- About - Modelling -->
-        <section>
-            <div class="row mt-5 ml-5 mr-5">
-                <div class="col">
-                    <div class="white-border">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Modelling</h3>
-                        <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">I have featured in photography to promote various local businesses, including Pret A Vintage, the Farnham Bridal Boutique and Room Ten in the Farnham area. These were promoted through their websites, social media and in the Life in Farnham editorial magazine.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row ml-5 mr-5">
-                <div class="col my-auto">
-                    <ul class="resume-list list-group list-group-horizontal pb-4">
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/bridal-bronze-award.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/bridal-back.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/bridal-vogue.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/bridal-blur.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/pret-a-vintage-lbd.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/pret-a-vintage-couples-portrait.jpg">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/pret-a-vintage-candlestick.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/room-ten.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/modelling/pret-a-vintage-greek.JPG">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        <!-- About - Hobbies -->
-
-            <div class="row mt-5 ml-5 mr-5">
-                <div class="col">
-                    <div class="white-border">
-                        <h3 class="sub-heading uppercase white pt-4 pb-4">Hobbies</h3>
-                        <p class="small-text white pr-3 pl-4 pt-4 pb-4 ml-5 mr-5 mt-4 ct">I have featured in photography to promote various local businesses, including Pret A Vintage, the Farnham Bridal Boutique and Room Ten in the Farnham area. These were promoted through their websites, social media and in the Life in Farnham editorial magazine.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row ml-5 mr-5">
-                <div class="col my-auto">
-                    <ul class="resume-list list-group list-group-horizontal pb-4">
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image contrast" src="assets/images/travelling/lotus-farm-cambodia.jpg">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image contrast" src="assets/images/travelling/girl-lotus-farm-cambodia.jpg">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image" src="assets/images/travelling/trevi-fountain.JPG">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image contrast" src="assets/images/travelling/zoe-at-snowdon.jpg">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image contrast" src="assets/images/travelling/heart-lake-snowdon.jpg">
-                        </li>
-                        <li class="carousel-image list-group-item">
-                            <img class="portrait-image contrast" src="assets/images/travelling/mountain-lake-mirror-snowdon.jpg">
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer -->
         
-        <footer class="mt-5 container-fluid pb-4">
+        <footer class="container-fluid pb-4 pt-5 mt-5">
             <div class="row">
                 <div class="col-sm-4">
-                    <h5 class="sub-heading white uppercase d-flex justify-content-center">Address</h5>
-                    <ul class="small-text white ct resume-list">
+                    <h5 class="sub-heading uppercase d-flex justify-content-center">Address</h5>
+                    <ul class="small-text ct resume-list">
                         <li>Ellisfield</li>
                         <li>Basingstoke</li>
                         <li>RG25 2QG</li>
                     </ul>  
                 </div>
                 <div class="col-sm-4">
-                    <h5 class="sub-heading white uppercase d-flex justify-content-center">Contact</h5>
-                    <ul class="small-text white ct resume-list">
-                        <li><span class="uppercase">Email</span>sophiarumpus@hotmail.co.uk</li>
-                        <li><span class="uppercase">Mobile</span>+44 (0)7795 346 845</li>
-                    </ul>     
+                    <h5 class="sub-heading uppercase d-flex justify-content-center">Contact</h5>
+                    <div class="contact-item">
+                        <div class="contact-mode">
+                            <p class=" small-text uppercase">Email</p>
+                        </div>
+                        <div class="small-text contact-value">
+                            <p>sophiarumpus@hotmail.co.uk</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-mode">
+                            <p class="small-text uppercase">Mobile</p>
+                        </div>
+                        <div class="small-text contact-value">
+                            <p>+44 (0)7795 346 845</p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-sm-4">
-                    <h5 class="sub-heading white uppercase d-flex justify-content-center">Download</h5>
+                    <h5 class="sub-heading uppercase d-flex justify-content-center">Download CV</h5>
                     <p>
-                        <a href="#" target="_blank" class="cv-pdf">
+                        <a href="assets/cv/sophia-rumpus-cv-march-2020.docx" target="_blank">
                             <div class="d-flex justify-content-center">
-                                <i class="fa fa-download sub-heading white" aria-hidden="true"></i>
+                                <i class="large material-icons black" aria-hidden="true">cloud_download</i>
                                 <span class="sr-only">Download link</span>
                             </div>
                         </a>
@@ -366,7 +141,7 @@
                 </div>
             </div>
         </footer>
-    </div>
 
+    </div>
 </body>
 </html>

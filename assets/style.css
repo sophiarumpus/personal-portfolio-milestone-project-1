@@ -11,7 +11,6 @@
  body {
      background: url("images/close-up-photo-of-green-leafed-plant-1407305.jpg");
      background-position: center;
-     background-repeat: repeat-y;
      background-attachment: fixed;
      background-size: cover;
      width: 100%;
@@ -22,12 +21,21 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/*  Minimalist Design
+    background-color: #ebeced !important;
+*/
+
 .section-600 {
     height: 600px;
 }
 
 .resume-list {
     list-style-type: none;
+}
+
+.center-block {
+    margin: 0 auto !important;
+    max-width: 50% !important;
 }
 
 /*--------------------------------------------Fonts and Colours*/
@@ -58,7 +66,18 @@
 }
 
 .white {
-    color: white;
+    color: white !important;
+}
+
+.black {
+    color: black;
+}
+
+.btn {
+    background-color: #b0acac !important;
+    /*--
+    background-color: #f2e33f !important;
+     */
 }
 
 .white-box {
@@ -73,14 +92,28 @@
     text-align: center;
 }
 
-/*--------------------------------------------Menu*/
-
-.nav-item {
-border-bottom: 2px solid white;
+.ra {
+    text-align: right;
 }
+
+/*--------------------------------------------Menu*/
 
 .hvr-grow-shadow {
     color: white !important;
+}
+
+.active {
+    background-color: white !important;
+    color: black !important;
+}
+
+.arrow {
+    padding: 0 !important;
+    font-size: 0;
+}
+
+.disabled {
+    color: #b0acac !important;
 }
 
 /*--------------------------------------------Header*/
@@ -98,34 +131,32 @@ border-bottom: 2px solid white;
     min-height: 600px;
 }
 
-/*--------------------------------------------Projects*/
-
-.website-image {
-height: 350px;
-width: 90%;
-border: 10px solid white;
-object-fit: cover;
+#name {
+    margin-top: 30% !important;
 }
 
-.marketing-content-image {
-    height: 235px;
-    width: 90%;
-    border: 10px solid white;
-    object-fit: cover;
+#title {
+    position: relative;
 }
 
-iframe {
-    border: 10px solid white;
+.section-title {
+    margin-top: 35% !important;
 }
+
+#work-experience {
+    margin-top:30% !important;
+}
+
+/*--------------------------------------------Profile*/
 
 /*--------------------------------------------Education*/
 
 .body-icon {
     color: white;
-    font-size: 72px;
+    font-size: 24px;
 }
 
-/*--------------------------------------------Carousel*/
+/*--------------------------------------------About - Carousel*/
 
 .portrait-image {
     height:600px;
@@ -144,4 +175,53 @@ iframe {
     margin-right: 20px;
 }
 
-/*--------------------------------------------Mobile Optimised*/
+/*--------------------------------------------Footer*/
+
+footer {
+background-color: white;
+}
+
+contact-item, .contact-mode, .contact-value {
+    display: inline-block;
+}
+
+.contact-item {
+    margin-left: 20% !important;
+    clear: both;
+}
+
+.contact-mode {
+    width: 20%;
+}
+
+.contact-value {
+    width: 60%;
+    position: relative;
+}
+
+.material-icons {
+    font-size: 40px !important;
+}
+
+/*--------------------------------------------Mobile Optimised
+
+@media(min-width:992px) {
+
+#name {
+    margin-top: 40% !important;
+}
+
+.section-title {
+    margin-top: 30% !important;
+}
+
+#work-experience {
+    margin-top:30% !important;
+}
+
+.center-form {
+    max-width: 70%; corrected already for mobile
+}
+
+
+*/
