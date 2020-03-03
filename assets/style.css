@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700 |Exo:100,200,300,400,500,600,700 |Lato:100,200,300,400,500,600 |Source Sans Pro:100,200,300,400,500,600');
+ 
+/*--------------------------------------------Layout*/
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
- 
-/*--------------------------------------------Layout*/
 
  body {
      background: url("images/close-up-photo-of-green-leafed-plant-1407305.jpg");
@@ -96,26 +96,6 @@
     text-align: right;
 }
 
-/*--------------------------------------------Menu*/
-
-.hvr-grow-shadow {
-    color: white !important;
-}
-
-.active {
-    background-color: white !important;
-    color: black !important;
-}
-
-.arrow {
-    padding: 0 !important;
-    font-size: 0;
-}
-
-.disabled {
-    color: #b0acac !important;
-}
-
 /*--------------------------------------------Header*/
 
 .header-item-image {
@@ -147,13 +127,34 @@
     margin-top:30% !important;
 }
 
-/*--------------------------------------------Profile*/
+/*--------------------------------------------Menu*/
 
-/*--------------------------------------------Education*/
+.hvr-grow-shadow {
+    color: black !important;
+}
 
-.body-icon {
-    color: white;
-    font-size: 24px;
+.active {
+    background-color: #b0acac !important;
+    color: white !important;
+}
+
+.arrow {
+    padding: 0 !important;
+    font-size: 0;
+}
+
+.disabled {
+    color: #b0acac !important;
+}
+
+/*--------------------------------------------Professional Skills*/
+
+.progress {
+    position:relative; 
+}
+
+.progress-bar {
+    background-color: #b0acac !important;
 }
 
 /*--------------------------------------------About - Carousel*/
