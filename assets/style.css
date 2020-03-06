@@ -172,9 +172,32 @@
     filter:saturate(1.3);
 }
 
+.carousel {
+
+}
+
+.slide {
+
+}
+
+.carousel-inner {
+
+}
+
+.carousel-item {
+
+}
+
+.carousel-image {
+    margin: 0 !important;
+    background-color: white;
+}
+
+/*--
 .carousel-image {
     margin-right: 20px;
 }
+*/
 
 /*--------------------------------------------Footer*/
 
@@ -220,9 +243,14 @@ contact-item, .contact-mode, .contact-value {
     margin-top:30% !important;
 }
 
-.center-form {
-    max-width: 70%; corrected already for mobile
+.center-form { corrected already for mobile
+    max-width: 70%; 
 }
 
+.portrait-image { corrected already for mobile
+    height:400px;
+    width: 266px;
+    object-fit: cover;
+}
 
 */
