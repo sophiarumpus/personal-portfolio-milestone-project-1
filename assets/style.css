@@ -143,32 +143,9 @@
     filter: saturate(1.3);
 }
 
-.carousel {
-
-}
-
-.slide {
-
-}
-
-.carousel-inner {
-
-}
-
-.carousel-item {
-
-}
-
-.carousel-image {
-    margin: 0 !important;
-    background-color: white;
-}
-
-/*--
 .carousel-image {
     margin-right: 20px;
 }
-*/ 
 
 /*--------------------------------------------Footer*/
 
@@ -202,6 +179,13 @@ contact-item, .contact-mode, .contact-value {
 
 @media (max-width: 767px) {
 
+    .navbar {
+        padding: 0 !important;
+        top: 0px;
+        left: 0px;
+        position: absolute !important;
+    }
+
      .section-600 {
         height: 150px;
         margin-left: 15px;
@@ -227,7 +211,8 @@ contact-item, .contact-mode, .contact-value {
     }
 
     #profile {
-        height: 200px;
+        padding-top: 30px;
+        height: 230px;
     }
 
     .white-border {
@@ -266,8 +251,15 @@ contact-item, .contact-mode, .contact-value {
 
 @media (min-width: 768px) and (max-width: 992px) {
 
+    .navbar {
+        padding: 0 !important;
+        margin-top: 10px;
+        left: 0px;
+        position: absolute !important;
+    }
+
     iframe {
-        width: 340px;
+        width: 300px;
         height: 250px;
     }
 
@@ -314,6 +306,11 @@ contact-item, .contact-mode, .contact-value {
     .center-block {
         margin-right: 200px;
         margin-left: 200px;
+    }
+
+    .portrait-image {
+        height: 400px;
+        width: 266px;
     }
 }
 
