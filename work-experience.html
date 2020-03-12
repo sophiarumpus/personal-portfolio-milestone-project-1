@@ -32,43 +32,75 @@
 
         <!-- Menu -->
 
-        <ul class="nav bg-white nav-fill sticky-top mb-5">
-            <li class="nav-item">
-                <a class="arrow nav-link hvr-grow-shadow small-text" href="/">
-                    <i class="small material-icons" aria-hidden="true">arrow_left</i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow small-text uppercase" href="/">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active hvr-grow-shadow small-text uppercase" href="work-experience.html">Work Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow small-text uppercase" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow small-text uppercase" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow small-text uppercase" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-grow-shadow small-text uppercase" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="arrow nav-link hvr-grow-shadow small-text uppercase" href="portfolio.html">
-                    <i class="small material-icons" aria-hidden="true">arrow_right</i>
-                </a>
-            </li>
-        </ul>
+        <div class="d-lg-none">
+            <nav class="navbar navbar-expand-lg sticky-top mb-5 white-box">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#work-menu" aria-controls="work-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </button>
+                <div class="collapse navbar-collapse" id="work-menu">
+                    <ul class="navbar-nav pl-3">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="/">Profile</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="work-experience.html">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-text hvr-grow-shadow small-text uppercase" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+        </div>
+
+        <div class="d-none d-lg-block">
+            <ul class="nav bg-white nav-fill sticky-top mb-5">
+                <li class="nav-item">
+                    <a class="arrow nav-link hvr-grow-shadow small-text" href="/">
+                        <i class="small material-icons" aria-hidden="true">arrow_left</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-grow-shadow small-text uppercase" href="/">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active hvr-grow-shadow small-text uppercase" href="work-experience.html">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-grow-shadow small-text uppercase" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-grow-shadow small-text uppercase" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-grow-shadow small-text uppercase" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-grow-shadow small-text uppercase" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="arrow nav-link hvr-grow-shadow small-text uppercase" href="portfolio.html">
+                        <i class="small material-icons" aria-hidden="true">arrow_right</i>
+                    </a>
+                </li>
+            </ul> 
+        </div>
 
         <!-- Work Experience - Marketing Assistant -->
 
         <section class="row ml-lg-5 ml-4 mr-lg-5 mr-4 mr-3 pl-lg-5 pl-2 pr-lg-5 pr-2"> 
             <div class="row"> 
                 <div class="col my-auto">
-                    <h3 class="sub-heading uppercase white pt-4 pb-4">Marketing Assistant</h3>
+                    <h3 class="sub-heading uppercase white mt-4 mt-lg-0 pt-4 pb-4">Marketing Assistant</h3>
                     <ul class="resume-list small-text ct white">
                         <li>Sony Professional Solutions Europe</li>
                         <li>Basingstoke</li>
@@ -193,14 +225,12 @@
                 </div>
                 <div class="col-sm-4">
                     <h5 class="sub-heading uppercase d-flex justify-content-center">Download CV</h5>
-                    <p>
                         <a href="assets/cv/sophia-rumpus-cv-march-2020.docx" target="_blank">
                             <div class="d-flex justify-content-center">
                                 <i class="large material-icons black" aria-hidden="true">cloud_download</i>
                                 <span class="sr-only">Download link</span>
                             </div>
                         </a>
-                    </p>
                 </div>
             </div>
         </footer>
