@@ -1,5 +1,3 @@
-python3 -m http.server
-
 User Centric Frontend Development Milestone Project - Sophia Rumpus | Resume
 
     I have chosen Project Example Idea 3 of building a personal portfolio site as this is something I can use in real life considering my choice for a career change from Marketing to Front End Development. There are two immediate challenges with this type of project; one, is that a CV/portfolio typically attemps to communicate a large amount of information to the reader (or recruiter) so it is important to break that information up into intuitive categories. I initially wanted to have one fluid page with links to each section but concluded that this would be a cognitive overload, therefore I've chosen to make separate webpages to break the information up. 
