@@ -20,7 +20,7 @@ Features
 
     - Header (all): This is the dominating feature of each webpage which clearly signposts which section of the website the user is currently on. On the right hand side there is a large portfolio picture to sell that the portfolio is of the person pictured. This allows the recruiter to build up an image of the person and associate it with a real representation of the individual. 
     - Profile: The two sections of 'What I Do' and 'Why Hire Me' are the two main questions recruiters want to see answers for when they are placing candidates into particular roles. The clear split allows the user to immedietaly see 3 key points that would inform them whether I have the expertise in a particular job role and what my key selling points are in comparison to many other candidates. This is aided by use of icons that allow recruiters to process the information of what the paragraph portrays before engaging with the text, making for a quicker experience of checking for information. 
-    - Work Experience: This section of the website is separated into 3 large rows containing each job role in my current working history. The middle section is surrounded by a border on the larger screens to visually show the separation of where one job role ends and another starts. The job roles are displayed chronologically, with the most recent at the top of the page to show the recruiter my most recent projects and achievements. Each job role is divided into sections represented by an icon as signposts for recruiters to indicate certain technical experience, making it easier for recruiters to engage with skills relevant to a patricular role or prroject that they are hiring for.
+    - Work Experience: This section of the website is separated into 3 large rows containing each job role in my current working history. The middle section is surrounded by a border on the larger screens to visually show the separation of where one job role ends and another starts. The job roles are displayed chronologically, with the most recent at the top of the page to show the recruiter my most recent projects and achievements. Each job role is divided into sections represented by an icon as signposts for recruiters to indicate certain technical experience, making it easier for recruiters to engage with skills relevant to a patricular role or project that they are hiring for.
     - Portfolio: On this page, there is a pattern of a graphic, visually representing a project paired with an explanation paragraph which conveys the project details. This allows recruiters to easily access the different projects I have created throughout my work experience, through from website development to digital content creation. They can further explore each project by clicking on the link situated below each explanation paragraph, which opens up the full project in another tab for further scrutiny of my ideas and skills, allowing the recruiter to assess the technological skills acquired throughout my work experience. The pattern of right and left alignment vertically down the page reflects the layout of text on the other website pages creating aesthetic unison with the rest of the website, whilst also spacially breaking up the large graphics of the projects for a clearer projection to the user. 
     - Education: The simplest page of the entire website to clearly display my education history should the recruiter be required to have certain qualifications to fill a job role, or project oppurtunity. 
     - About: This page was designed to showcase skills and hobbies beyond a paper CV which would allows recruiters to assess company-fit from getting a further idea of my background more powerfully realised with a series of images behind an interactive carousel. I have made 3 versions of the carousel each for large, medium and small devices so that less images are shown on smaller devices to fit the screen-width. The images within the carousel are all my own images, or images I have featured in that I have received permission to showcase on my portfolio. The outcome of this page is to show to the recruiter that I enjoy travelling appreciating natural beauty and architecture and that I have some 'outside' work experience in an entirely different industry of modelling showing the variety of experiences I have had.
@@ -55,9 +55,6 @@ Testing
     Try to submit the empty form and verify that an error message about the required fields appears
     Try to submit the form with an invalid email address and verify that a relevant error message appears
     Try to submit the form with all inputs valid and page should refresh.
-    In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-    You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-    If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
     Buttons (Portfolio): 
     Go to the "Portfolio" page
@@ -68,16 +65,21 @@ Testing
     On the footer, click the icon underneath 'Download CV' 
     Verify that the browser downloads a word document of my CV
 
+    On mobile views, the content is stacked but still carries the left and right alignment for aesthetic unison with larger screens, the profile image is a lot longer giving a full portrait view of the portfolio owner. The carousel has been reduced in size to allow more breathing space and a better user experience. 
+    On mobile views, the portfolio section has been re-ordered slightly so that the graphic always falls below the explanation text (see PORTFOLIO code).
+    I have noticed a bug on the mobile-view of the carousel which I aim to fix in future when I manipulate the carousel with JavaScript - this is that the left and right arrow-keys to scroll through the carousel are not centered on the page, which is especially obvious on smaller mobile views. 
+    Most of the testing for screen sizes was done through Chrome Developer tools through trial and error of padding and layout.
+
     I have sent the website to a few friends and colleagues for general testing and feedback of the appearance and intuitivity of the layout, design and functionality and I have implemented the feedback throughout the build of the website and am confident in its success. 
 
 Deployment
 
-    As Gitpod and GitHub has been entirely new to me before this project, I had through fault been committing my changes to a branch called 'setup' so I needed to do a pull request from Master and merge the two branches so that my latest and final changes were pushed to the Master file to final deployment. 
-    After this was resolved, I deployed my prroject from my GitHub repository to GitHub pages to receive the final link: 
+    As Gitpod and GitHub has been entirely new to me before this project, I had through fault been committing my changes to a branch called 'setup' so I needed to do a pull request from Master and merge the two branches so that my latest and final changes were pushed to the Master file for final deployment. 
+    After this was resolved, I deployed my project from my GitHub repository to GitHub pages to receive the final link: 
 
     https://sophiarumpus.github.io/personal-portfolio-milestone-project-1///////////
 
-    I am looking to change this link to my purchased domain: sophiarumpus.com but will need to do further research on combining the hosting site with custom domain. 
+    I am looking to change this link to my purchased domain: sophiarumpus.com but will need to do further research on combining the hosting site with the custom domain funtion on GitHUb. 
     
 Credits 
 
